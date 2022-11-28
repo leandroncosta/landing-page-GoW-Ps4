@@ -30,7 +30,8 @@ O layout da aplicação está disponível no Figma :
 ---
 
 ## Deploy do projeto.
-https://landing-page-go-w-ps4-5rqr.vercel.app/
+
+<a href="https://landing-page-go-w-ps4-5rqr.vercel.app/"> Clique aqui</a>
 
 
  by Leandro Costa  [Get in Touch!](https://www.linkedin.com/in/leandro-costa-b23515220/)
