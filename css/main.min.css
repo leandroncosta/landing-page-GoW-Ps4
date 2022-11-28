@@ -1,0 +1,562 @@
+.container {
+  width: 100%;
+  max-width: 143.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 124.8rem;
+  }
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+}
+.subtitle span {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  margin-left: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .subtitle span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .subtitle {
+    justify-content: center;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 11.4rem;
+  line-height: 97.5%;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 560px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 130%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 160%;
+  color: #bdc2cb;
+}
+
+.card-character {
+  width: 100%;
+  max-width: 38.4rem;
+}
+.card-character .image {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 48rem;
+  margin-bottom: 2.4rem;
+  overflow: hidden;
+}
+.card-character .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card-character .image button {
+  position: absolute;
+  bottom: 0;
+  padding: 1.8rem 3.6rem;
+  background: #3265ea;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.card-character .info h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 0.7rem;
+}
+.card-character .info span {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.card-character:hover .image img {
+  transform: scale(1.1);
+}
+.card-character:hover .image button {
+  opacity: 1;
+  bottom: 5.7rem;
+}
+@media (max-width: 991px) {
+  .card-character .image {
+    height: 44rem;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .platform {
+  display: flex;
+  align-items: center;
+}
+header .container .platform span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+header .container .platform ul {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.8rem;
+}
+header .container .platform ul li {
+  border: 2px solid #bdc2cb;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+@media (max-width: 560px) {
+  header .container {
+    height: 7rem;
+  }
+  header .container .icon-sony {
+    display: none;
+  }
+  header .container .logo-gow {
+    max-width: 140px;
+  }
+  header .container .platform span {
+    display: none;
+  }
+}
+
+.s-hero {
+  padding-top: 16.4rem;
+  padding-bottom: 10.3rem;
+  background: url("../images/bg-hero.jpg") no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 80rem;
+}
+.s-hero .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.s-hero .left {
+  width: 100%;
+  max-width: 69.9rem;
+}
+.s-hero .left h1 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.s-hero .left p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 140%;
+  margin-bottom: 4rem;
+}
+.s-hero .left .buy {
+  display: flex;
+}
+.s-hero .left .buy strong {
+  background: #fff;
+  padding: 1.8rem 3.6rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #000;
+}
+.s-hero .left .buy a.btn-buy-game {
+  display: block;
+  border: 0.1rem solid transparent;
+  padding: 1.8rem 3.6rem;
+  background: #3265ea;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+.s-hero .left .buy a.btn-buy-game:hover {
+  background: #000000;
+  border: 0.1rem solid #fff;
+}
+.s-hero .trailer {
+  position: relative;
+  top: 11rem;
+  width: 100%;
+  max-width: 39.3rem;
+}
+.s-hero .trailer span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2.3rem;
+}
+.s-hero .trailer button {
+  position: relative;
+  width: 100%;
+  height: 22.7rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2509803922);
+  border: 0.3rem solid #3265ea;
+  margin-bottom: 5.1rem;
+  overflow: hidden;
+}
+.s-hero .trailer button .thumbnail {
+  width: 100%;
+}
+.s-hero .trailer button .btn-play {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 3.2rem;
+  transition: width 10s ease;
+}
+.s-hero .trailer button .btn-play:hover {
+  width: 20%;
+}
+.s-hero .trailer .classification-indicate {
+  display: flex;
+  align-items: center;
+}
+.s-hero .trailer .classification-indicate p {
+  color: #fff;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  max-width: 27.4rem;
+  margin-left: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .s-hero {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+  }
+  .s-hero .left {
+    max-width: 64rem;
+  }
+  .s-hero .left p {
+    font-size: 1.6rem;
+  }
+  .s-hero .trailer {
+    top: 0;
+    max-width: 35.3rem;
+  }
+  .s-hero .trailer button {
+    height: 19.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .s-hero {
+    padding: 6rem 0;
+    background-size: cover;
+  }
+  .s-hero .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-hero .left {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .s-hero .left .buy {
+    justify-content: center;
+  }
+  .s-hero .trailer {
+    text-align: center;
+  }
+  .s-hero .trailer button {
+    margin-bottom: 3rem;
+  }
+  .s-hero .trailer .classification-indicate {
+    flex-direction: column;
+  }
+  .s-hero .trailer .classification-indicate p {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-hero {
+    padding: 4rem 0;
+  }
+  .s-hero .left p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .s-hero .left .buy {
+    flex-direction: column;
+  }
+  .s-hero .trailer {
+    max-width: 31rem;
+  }
+  .s-hero .trailer button {
+    height: 17.7rem;
+  }
+  .s-hero .trailer .classification-indicate p {
+    line-height: 2.8rem;
+  }
+}
+
+.s-info-game {
+  background: #090a0a;
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+}
+.s-info-game ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s-info-game ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s-info-game ul li span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  margin-top: 1.2rem;
+  color: #bdc2cb;
+}
+@media (max-width: 1200px) {
+  .s-info-game {
+    padding: 4rem 0;
+    height: auto;
+  }
+  .s-info-game ul {
+    flex-wrap: wrap;
+    gap: 3rem 0;
+  }
+  .s-info-game ul li {
+    width: 33.3%;
+  }
+}
+@media (max-width: 560px) {
+  .s-info-game ul li {
+    width: 50%;
+  }
+  .s-info-game ul li span {
+    max-width: 14.5rem;
+  }
+}
+
+.s-story {
+  width: 100%;
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+  background: url("../images/bg-story.png") no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+.s-story .container {
+  display: flex;
+  align-items: center;
+}
+.s-story .container .info-story {
+  width: 100%;
+  max-width: 62.9rem;
+}
+.s-story .container .info-story h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.4rem;
+  max-width: 50.2rem;
+}
+.s-story .container .info-story p {
+  margin-bottom: 5.6rem;
+}
+.s-story .container .info-story .corp {
+  display: flex;
+  align-items: center;
+}
+.s-story .container .info-story .corp p {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 160%;
+  max-width: 32.4rem;
+  margin-left: 4.6rem;
+  color: #bdc2cb;
+}
+.s-story .container .kratos-atreus {
+  position: relative;
+  left: 11rem;
+  top: 1.6rem;
+}
+@media (max-width: 1200px) {
+  .s-story {
+    background-image: none;
+    padding: 6rem 0;
+  }
+  .s-story .container {
+    flex-direction: column-reverse;
+  }
+  .s-story .container .kratos-atreus {
+    left: 0;
+    top: 0;
+    margin-bottom: 4rem;
+  }
+  .s-story .container .info-story {
+    max-width: 100%;
+    text-align: center;
+  }
+  .s-story .container .info-story .subtitle {
+    justify-content: center;
+  }
+  .s-story .container .info-story h2 {
+    max-width: 75%;
+    margin: 2rem auto;
+  }
+  .s-story .container .info-story .corp {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .s-story .container .info-story h2 {
+    max-width: 95%;
+  }
+}
+@media (max-width: 560px) {
+  .s-story .info-story h2 {
+    font-size: 3rem;
+  }
+  .s-story .info-story p {
+    text-align: justify;
+    word-wrap: break-word;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .s-story .info-story .corp {
+    flex-direction: column;
+  }
+  .s-story .info-story .corp p {
+    margin-left: 0;
+    margin-top: 3rem;
+    text-align: start;
+  }
+}
+
+.s-characters {
+  padding-top: 18.8rem;
+  padding-bottom: 14.3rem;
+  background: url("../images/bg-characters.png") no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+.s-characters .description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s-characters .description .left {
+  width: 100%;
+  max-width: 61.2rem;
+}
+.s-characters .description .left h3 {
+  display: flex;
+}
+.s-characters .description .left h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.4rem;
+}
+.s-characters .description .right {
+  display: flex;
+  align-items: center;
+}
+.s-characters .description .right .text span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-top: 2.3rem;
+}
+@media (max-width: 1200px) {
+  .s-characters {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .s-characters .description {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-characters .description .left {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-characters .description {
+    padding: 4rem 0;
+  }
+  .s-characters .description .left h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  .s-characters .description .left p {
+    font-size: 1.5rem;
+  }
+  .s-characters .description .right {
+    flex-direction: column;
+  }
+  .s-characters .description .right .text img {
+    margin: 0 auto;
+  }
+  .s-characters .slide-characters {
+    margin-top: 4rem;
+  }
+}

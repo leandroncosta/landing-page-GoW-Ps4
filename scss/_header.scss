@@ -1,0 +1,58 @@
+// ========== HEADER =======
+
+header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .platform {
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+      ul {
+        display: flex;
+        gap: 0.8rem;
+        margin-left: 1.8rem;
+        li {
+          border: 2px solid #bdc2cb;
+          padding: 0.5rem 0.9rem;
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+    // @media(max-width: 1200px){
+
+    // }
+    // @media(max-width: 991px){
+
+    // }
+    @media (max-width: 560px) {
+      height: 7rem;
+      .icon-sony {
+        display: none;
+      }
+      .logo-gow {
+        max-width: 140px;
+      }
+      .platform {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
