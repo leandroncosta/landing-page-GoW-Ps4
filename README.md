@@ -4,6 +4,7 @@
 <br>
 
 ## 💻 Sobre:
+<br>
 
 Landing page temática do jogo 'God of War Ragnarok lançado para PS4'
 
@@ -13,7 +14,7 @@ Landing page temática do jogo 'God of War Ragnarok lançado para PS4'
 O layout foi inspirado no figma do canal Codeboost
 O layout da aplicação está disponível no Figma :
 
-<a href="https://www.figma.com/file/BPHOdrrzDnuvKPurADmIsW/Codeboost---God-of-War-Ragnarok?node-id=0%3A1&t=x0igKrsERNUB2qFL-1>
+<a href="https://www.figma.com/file/BPHOdrrzDnuvKPurADmIsW/Codeboost---God-of-War-Ragnarok?node-id=0%3A1&t=x0igKrsERNUB2qFL-1">
   <img alt="" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
